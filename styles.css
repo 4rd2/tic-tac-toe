@@ -1,0 +1,29 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 40px auto;
+    width: max-content;
+    border: 2px solid #333;
+    background-color: #fefefe;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+  
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 2px solid #333;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+  
+.cell:hover {
+    background-color: #f0f0f0;
+}
+  
